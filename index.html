@@ -87,7 +87,8 @@
             <textarea name="textarea" rows="10" cols="50">Ingresa tu comentario</textarea>
             </p>
              <p>
-                <input class="btn" type="submit" value="Enviar">
+             <!--   <input class="btn" type="submit" value="Enviar"> -->
+             <button id="myBtn">Enviar</button>
             </p>
 
         </form>
@@ -104,9 +105,15 @@
  
     </div>
 
-    <div class="modal">
-        <p>El registro se creó correctamente.</p>
-    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Se registro correctamente.</p>
+        </div>
+      
+      </div>
     
     <script src="formulario.js"></script>
 
