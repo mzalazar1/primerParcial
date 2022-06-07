@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial</title>
+
+    <link type="text/css" rel="stylesheet" href="stylos.css">
+</head>
+<body>
+    <div class="conteiner">
+    
+    <div class="header">
+
+    </div>
+    <div class="nav">
+
+    </div>
+    <div class="contenido">
+    <div class="main">
+        <form id="formulario">
+            <label for="name">Nombre:</label>
+            <p><input type="text" id="name" name="user_name" placeholder="Ingrese su Nombre" required></p> 
+            <p id="nameError" class="hiddenError">Minimo 3 letras</p>
+
+            <p>
+                 <label for="apellido">Apellido:</label> 
+               <p><input type="text" id="ape" name="last_name" placeholder="Ingrese su Apellido" required></p> 
+               <p id="apeError" class="hiddenError">Minimo 3 letras</p>
+            </p>
+            <p>
+                <label for="mail">E-Mail:</label>
+            <p><input type="email" id="mail" name="mail" placeholder="Ingrese su Mail" required></p> 
+            <p id="mailError" class="hiddenError">Mail incorrecto</p>
+        
+           </p>
+            <p>
+                <label for="edad">Edad:</label>
+            <p><input type="number" id="edad" name="age" placeholder="Ingrese su Edad" required></p>
+            <p id="edadError" class="hiddenError">La edad debe estar entre 0 a 100</p>
+            </p>
+            <p>
+                Sexo:
+            </p>
+            <p>
+                <input type="radio" id="sexo" name="sex" value="Masculino">
+                <label for="sexo">Masculino</label>
+            </p>
+            <p>
+                <input type="radio" id="sexo" name="sex" value="Femenino">
+                <label for="sexo">Femenino</label>   
+            </p>
+            <p>Temas de interes:</p>
+
+            <p>
+                <input type="checkbox" id="tema1" name="tema1" value="Deporte">
+                <label for="tema1">Deporte</label>
+            </p>
+            <p>
+                <input type="checkbox" id="tema2" name="tema2" value="Musica">
+                <label for="tema2">Musica</label>
+            </p>
+            <p>
+                <input type="checkbox" id="tema3" name="tema3" value="Juegos">
+                <label for="tema3">Juegos</label>
+            </p>
+            <p>
+                <input type="checkbox" id="tema4" name="tema4" value="Tecnologia">
+                <label for="tema4">Tecnologia</label>
+            </p>
+            <p>
+                <input type="checkbox" id="tema5" name="tema5" value="Otros">
+                <label for="tema5">Otros</label>
+            </p>
+
+            <p>Pais:</p>
+            <select name="pais" id="pais">
+                <option value="ar">Argentina</option>
+                <option value="ch">Chile</option>
+                <option value="bra">Brasil</option>
+                <option value="uy">Uruguay</option>
+            </select>
+            
+            <p>Comentarios:</p>
+            <p>
+            <textarea name="textarea" rows="10" cols="50">Ingresa tu comentario</textarea>
+            </p>
+             <p>
+                <input class="btn" type="submit" value="Enviar">
+            </p>
+
+        </form>
+
+    </div>
+    <div class="aside">
+
+    </div>
+    </div>
+    
+    <div class="footer">
+
+    </div>
+ 
+    </div>
+
+    <div class="modal">
+        <p>El registro se creó correctamente.</p>
+    </div>
+    
+    <script src="formulario.js"></script>
+
+</body>
+</html>
